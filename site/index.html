@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <!--JavaScript-->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1>
+        Sistema de cadastro Sorrifácil
+        </h1>
+    </header>
+    <form class = 'opcao_inicial'>
+        <button class="encontrar_cliente" id = 'encontrar_cliente'>Encontrar Clientes</button><br>
+        <button class="cadastro" id="cadastro-btn" style="margin-top: 0.5rem;">Cadastrar Clientes</button><br>
+        <button id="ver-clientes" style="margin-top: 0.5rem;">Lista de clientes</button><br>
+    </form>
+    <form class = 'cadastro_cliente hiden' id="form-cadastro">
+        <input type="text" placeholder="Nome" id="nome">
+        <input type="email" placeholder="Email" id="email">
+        <input type="text" placeholder="CPF" id="cpf">
+        <input type="text" placeholder="Telefone" id="telefone">
+        <input type="date" placeholder="Data de Nascimento" id="data_nascimento">
+        <button class="cadastrar" id="cadastro-btn">Cadastrar</button>
+    </form>
+    <form class = 'encontrar hiden' id="form-encontrar">
+        <input type="text" placeholder="Nome">
+        <button class="encontrar">Encontrar</button>
+    </form>
+    <div class="resultado">
+        
+    </div>
+    <div class="lista hiden" id="lista">
+        <h1>Lista de Clientes</h1>
+        <button>Bernardo Battlist</button>
+    </div>
+</body>
+</html>
