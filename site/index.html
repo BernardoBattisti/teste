@@ -32,7 +32,9 @@
         <input type="text" placeholder="CPF" id="cpf">
         <input type="text" placeholder="Telefone" id="telefone">
         <input type="date" placeholder="Data de Nascimento" id="data_nascimento">
-        <button class="cadastrar" id="cadastro-btn">Cadastrar</button>
+        <button class="cadastrar" id="cadastrar-btn">Cadastrar</button>
+        <button class="voltar" id="voltar-btn">Voltar</button>
+        <!-- <button id="ver-clientes" style="margin-top: 0.5rem;">Lista de clientes</button><br> -->
     </form>
     <form class = 'encontrar hiden' id="form-encontrar">
         <input type="text" placeholder="Nome">
@@ -43,7 +45,18 @@
     </div>
     <div class="lista hiden" id="lista">
         <h1>Lista de Clientes</h1>
-        <button>Bernardo Battlist</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="clientesTabela">
+                <!-- Dados serão inseridos aqui via JavaScript -->
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
